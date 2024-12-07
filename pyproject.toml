@@ -13,6 +13,7 @@ pydantic = "^2.10.3"
 fastapi = "^0.115.6"
 uvicorn = "^0.32.1"
 httpx = "^0.28.1"
+loguru = "^0.7.3"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -23,6 +24,7 @@ syrupy = "^4.7.1"
 pytest-mock = "^3.14.0"
 pylint = "^3.2.6"
 pytest-http = "^0.1.1"
+mypy = "^1.13.0"
 
 [build-system]
 requires = ["poetry-core"]
