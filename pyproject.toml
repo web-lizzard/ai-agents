@@ -7,6 +7,12 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "3.11.x"
+openai = "^1.57.0"
+pydantic-settings = "^2.6.1"
+pydantic = "^2.10.3"
+fastapi = "^0.115.6"
+uvicorn = "^0.32.1"
+httpx = "^0.28.1"
 
 
 [tool.poetry.group.dev.dependencies]
