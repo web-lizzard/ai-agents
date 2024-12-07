@@ -1,17 +1,17 @@
 from typing import Annotated
 
 import uvicorn
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 
-from api.dependencies import get_model
-from domain.ports import LanguageModel
+from src.api.dependencies import get_model
+from src.domain.ports import LanguageModel
 
 app = FastAPI()
 
 
 @app.post('/')
 async def message(
-    model: Annotated[LanguageModel, get_model()]
+    model: Annotated[LanguageModel, Depends(get_model)]
 ):
     print(model)
     return {'healthy': True}

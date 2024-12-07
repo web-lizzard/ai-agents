@@ -2,7 +2,7 @@ from typing import Iterable
 
 from openai import AsyncOpenAI
 
-from domain.exceptions import LanguageModelError
+from src.domain.exceptions import LanguageModelError
 
 
 class OpenAiLanguageModel:
